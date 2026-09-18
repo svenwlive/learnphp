@@ -1,43 +1,24 @@
 <?php
-// library
-
-class Task {
-    public function job(Logger $logger) {
-        for($i = 0; $i < 10; $i++) {
-            // do something           
-            $logger->log("Job $i was done!");
-        }
-    }
-}
-
-class ConsoleLogger implements Logger {
-    public function log($message) {
-        echo "$message\n";
-    }
-}
-
-class NothingLogger implements Logger {
-    public function log($message) {
-        // do nothing
-    }
-}
-
-interface Logger {
-    public function log($message);
-}
-
-// user code
-
-class FileLogger implements Logger {
-    public function log($message) {
-        $file = fopen('log.txt', 'a');
-        fwrite($file, "$message\n");
-        fclose($file);
-    }
-}
-
-$logger = new FileLogger();
-$task = new Task();
-$task->job($logger);
-
+$name = "svenw";
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meoww</title>
+</head>
+<body>
+    <h1>Hello, <?=$name?>!</h1>
+    <ul>
+        <?php for($i=0;$i<10;$i++): ?>
+            <?php if($i%2 === 0): ?>
+                <li style="color:green"><?= $i ?></li>
+            <?php else: ?>
+                 <li style="color:red"><?= $i ?></li>
+            <?php endif ?>
+        <?php endfor ?>
+    </ul>
+</body>
+</html>
