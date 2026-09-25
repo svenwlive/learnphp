@@ -1,27 +1,3 @@
-<?php
-$title = 'World';
-$posts =[
-  [
-    'title' => 'Some World title 1',
-    'date' => 'Januray 1, 2021',
-    'author' => 'goober',
-    'body' => 'Some World content 1'
-  ],
-  [
-    'title' => 'Some World title 2',
-    'date' => 'Januray 2, 2021',
-    'author' => 'goober',
-    'body' => 'Some World content 2'
-  ],
-  [
-    'title' => 'Some World title 3',
-    'date' => 'Januray 3, 2021',
-    'author' => 'goober',
-    'body' => 'Some World content 3'
-  ]
-]
-?>
-
 <?php include __DIR__ . '/partials/header.php'; ?>
 
 <main class="container">
