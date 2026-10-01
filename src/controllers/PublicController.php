@@ -2,6 +2,10 @@
 
 namespace App\Controllers;
 
+use App\DB;
+use App\Models\Post;
+use App\Models\User;
+
 class PublicController
 {
     public function index()
@@ -106,5 +110,9 @@ class PublicController
 
     public function answer() {
         dump($_POST);
+    }
+
+    public function test() {
+        $db = new DB();
     }
 }
