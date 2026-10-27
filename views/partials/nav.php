@@ -11,7 +11,7 @@
               >Large</a
             >
           </div>
-          <div class="col-4 d-flex justify-content-end align-items-center">
+          <div class="col-4 d-flex justify-content-end align-items-center gap-2">
             <a class="link-secondary" href="#" aria-label="Search">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,8 @@
                 <path d="M21 21l-5.2-5.2"></path>
               </svg>
             </a>
-            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+            <a class="btn btn-sm btn-outline-secondary" href="/register">Sign up</a>
+            <a class="btn btn-sm btn-outline-primary" href="/login">Login</a>
           </div>
         </div>
       </header>
