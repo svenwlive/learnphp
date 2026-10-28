@@ -1,0 +1,17 @@
+{
+    "name": "svenwlive/learnphp",
+    "type": "project",
+    "license": "WTFPL",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "svenw",
+            "email": "svenwlive@icloud.com"
+        }
+    ],
+    "require": {}
+}
