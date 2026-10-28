@@ -9,11 +9,12 @@ use App\Models\User;
 class PublicController
 {
     public function index()
-    {
-        $title = 'World';
-        $posts = Post::where('category', 'world');
-        view('index', compact('title', 'posts'));
-    }
+        {
+            $title = 'World';
+            $posts = Post::where('category', 'world');
+            dump($posts);
+            view('index', compact('title', 'posts'));
+        }
 
     public function us()
     {
