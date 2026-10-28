@@ -11,8 +11,9 @@ spl_autoload_register(function ($class) {
   $class = str_replace('\\', '/', $class);
   require_once __DIR__ . "/../src/$class.php";
 });
+session_start();
 require __DIR__ . '/../helpers.php';
-require __DIR__ . '/../Routes.php';
+require __DIR__ . '/../routes.php';
 
 $router = new Router($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
 $match = $router->match();
